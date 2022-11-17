@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$border: 1px solid red;
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #273237;
+}
+
+* {
+  box-sizing: border-box;
+}
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  margin: 10px auto 0 auto;
+  width: 90.9%;
+  display: flex;
+  justify-content: space-between;
+  &_title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    color: #273237;
+    max-width: 481px;
+  }
+  &_nav {
+    align-self: baseline;
+    max-width: 644px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 72px;
+    &_menu {
+      max-width: 470px;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      &_link {
+        max-width: 150px;
+        width: 100%;
+        height: 50px;
+        background: #a1cdf1;
+        border: 2px solid #273237;
+        border-radius: 8px;
+        @include flex-center-center();
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #273237;
+      }
+    }
+    &_social {
+      display: flex;
+      &_logo {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  }
+}
+
+.main {
+  margin: -14px auto 48px auto;
+  width: 89.93%;
+  background: url("./images/Илюста 1.webp") right bottom no-repeat;
+  background-size: contain;
+  &_content {
+    max-width: 750px;
+    width: 100%;
+    &_title {
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 68px;
+      color: #273237;
+      margin: 0 0 15px 0;
+      padding-top: 45px;
+    }
+    &_text {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 56px 0;
+      max-width: 609px;
+      width: 100%;
+    }
+    &_button {
+      width: 300px;
+      height: 50px;
+      background: #f0a6ca;
+      border: 2px solid #273237;
+      border-radius: 8px;
+    }
+  }
+}
+
+.about {
+  min-height: 561px;
+  @include flex-center-center();
+  flex-direction: column;
+  gap: 39px;
+  background: rgba(161, 205, 241, 0.1);
+  &_content {
+    margin: 0 75px 0 183px;
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_img {
+      object-fit: contain;
+      width: 410px;
+      height: 410px;
+    }
+    &_wrapper {
+      max-width: 630px;
+      width: 100%;
+      &_title {
+        text-align: center;
+        margin: 0 auto 32px auto;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 68px;
+        color: #273237;
+      }
+      &_text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #273237;
+        margin: 0 0 12px 0;
+      }
+      &_education {
+        margin: 0;
+        &_image {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &_wrapper-education {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 32px;
+      }
+      &_button {
+        width: 440px;
+        height: 50px;
+        background: #f0a6ca;
+        border: 2px solid #273237;
+        border-radius: 8px;
+        @include flex-center-center();
+        gap: 33px;
+      }
+    }
+  }
+  &_hiddenlayer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    justify-items: center;
+    align-items: center;
+    &_img {
+      width: 410px;
+      height: 260px;
+      object-fit: contain;
+      &:first-of-type {
+        width: 410px;
+        height: 574px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    }
+  }
+  &_rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.services {
+  margin: 48px auto;
+  max-width: 1290px;
+  width: 100%;
+  @include flex-center-center();
+  flex-direction: column;
+  &_title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: #273237;
+    text-align: center;
+    margin: 0 auto 56px auto;
+  }
+  &_wrapper {
+    @include flex-center-center();
+    gap: 30px;
+    margin-bottom: 32px;
+    &_element {
+      max-width: 300px;
+      width: 100%;
+      &_text {
+        margin: 32px 0 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.reviews {
+  margin: 0 auto 48px auto;
+  max-width: 1070px;
+  width: 100%;
+  &_title {
+    margin: 0 auto 48px auto;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: center;
+    color: #273237;
+  }
+}
+
+.swiper {
+  width: 850px; 
+  height: 180px;
+}
