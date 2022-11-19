@@ -278,8 +278,15 @@ a {
 }
 
 .form {
+  position: relative;
   margin: 0 auto;
   max-width: 873px;
+  height: 100vh;
+  &_img {
+    position: absolute;
+    right: -205px;
+    top: 212px;
+  }
   &_content {
     &_title {
       font-weight: 600;
@@ -308,6 +315,60 @@ a {
       &_button {
         margin-top: 16px;
       }
+    }
+  }
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 43px;
+  background: #d0e6f8;
+  &_content {
+    @include flex-center-center();
+    flex-direction: column;
+    max-width: 1293px;
+    margin: 0 auto;
+    &_menus {
+      align-self: flex-start;
+      &_title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #273237;
+        margin: 0;
+      }
+      &_subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(39, 50, 55, 0.6);
+        margin: 8px auto 56px auto;
+      }
+      &_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 68px;
+        &_link {
+          margin: 0;
+          font-size: 16px;
+          line-height: 24px;
+          color: #273237;
+          align-self: baseline;
+          &:hover {
+            border-bottom: 1px solid #273237;
+          }
+        }
+      }
+    }
+    &_author {
+      margin: 0;
+      margin-top: -40px;
+      align-self: end;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(39, 50, 55, 0.6);
     }
   }
 }
