@@ -208,15 +208,39 @@
         <div class="form_content">
           <h2 class="form_content_title">Записаться на консультацию</h2>
           <form action="" class="form_content_form">
-            <input type="text" />
-            <input type="phone" />
-            <input type="text" />
-            <button type="submit">Хочу консультацию</button>
+            <input
+              type="text"
+              placeholder="Имя"
+              required
+              class="form_content_form_name form_content_form_style"
+              name="form_content_form_name"
+            />
+            <input
+              type="phone"
+              placeholder="Ваш номер телефона"
+              required
+              name="form_content_form_phone"
+              class="form_content_form_phone form_content_form_style"
+            />
+            <input
+              type="text"
+              placeholder="С какой проблемой вы хотите обратиться?"
+              name="form_content_form_area"
+              class="form_content_form_style"
+            />
+            <button
+              type="submit"
+              class="main_content_button form_content_form_button"
+            >
+              Хочу консультацию
+            </button>
           </form>
         </div>
       </section>
     </main>
-
+    <footer class="footer">
+      
+    </footer>
     <script src="./index.js" charset="utf-8"></script>
   </body>
 </html>

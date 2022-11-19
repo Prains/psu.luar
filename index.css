@@ -284,4 +284,37 @@ a {
 }
 .reviews_slider_paganation_button_active {
   background: #f0a6ca;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 873px;
+}
+.form_content_title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 68px;
+  text-align: center;
+  color: #273237;
+  margin: 0 auto 56px auto;
+}
+.form_content_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.form_content_form_style {
+  max-width: 410px;
+  width: 100%;
+  background: rgba(161, 205, 241, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+.form_content_form_button {
+  margin-top: 16px;
 }/*# sourceMappingURL=index.css.map */
